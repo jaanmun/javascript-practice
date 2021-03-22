@@ -20,6 +20,7 @@
       document.write('shape : ' + fruit.shape + '<br>');
       fruit['other fruit'] = 'Lemon';
       document.write('other fruit : ' + fruit['other fruit'] + '<br>');
+      // fruit 객체 안의 name, color, shape, other fruit 은 모두 property
     </script>
 
     <h2>Iterate</h2>
@@ -27,6 +28,16 @@
       for (let key in fruit) {
         document.write(key + ' : ' + fruit[key] + '<br>');
       }
+    </script>
+
+    <h2>Property & Method</h2>
+    <script>
+      fruit.showAll = function () {
+        for (let key in this) {
+          document.write(key + ' : ' + this[key] + '<br>');
+        }
+      };
+      fruit.showAll(); // 객체에 소속된 함수를 메소드라고 부른다.
     </script>
   </body>
 </html>
