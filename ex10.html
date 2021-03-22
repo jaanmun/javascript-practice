@@ -8,5 +8,18 @@
   </head>
   <body>
     <h1>Object</h1>
+    <h2>Create</h2>
+    <script>
+      let fruit = {
+        name: 'Apple',
+        color: 'red',
+      };
+      document.write('name : ' + fruit.name + '<br>');
+      document.write('color : ' + fruit.color + '<br>');
+      fruit.shape = 'round';
+      document.write('shape : ' + fruit.shape + '<br>');
+      fruit['other fruit'] = 'Lemon';
+      document.write('other fruit : ' + fruit['other fruit'] + '<br>');
+    </script>
   </body>
 </html>
